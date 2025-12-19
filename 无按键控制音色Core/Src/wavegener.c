@@ -149,7 +149,7 @@ float CalculateHarmonicDecay(float harmonicTime, int harmonicIndex) {
 
 void SwitchTone(const uint8_t* ampArray, const uint8_t* decArray){
 	for(int i = 0; i < 9; i++){
-		harmAmp[i] = (float)ampArray[i];
+		harmAmp[i] = (float)ampArray[i]/ 100.0f;
 	}
 	for(int i = 0; i < 9; i++){
 		harmDec[i] = (float)decArray[i];
@@ -181,11 +181,12 @@ int16_t SynthGenSample(void) {
             float voiceSample = 0.0f;
 
             for (int harmonic = 0; harmonic < 9; harmonic++) {
-                float harmonicDecay = CalculateHarmonicDecay(voice->harmonicTime, harmonic);
+                
+							float harmonicDecay = CalculateHarmonicDecay(voice->harmonicTime, harmonic);
                 float harmonicAmp = harmAmp[harmonic] * harmonicDecay;
 
                 if (harmonicAmp > 0.01f) {
-                    float harmonicPhase = basePhase * (harmonic + 1);
+                   float harmonicPhase = basePhase * (harmonic + 1) + harmonic * 0.17f;
                     voiceSample += sin_lut(harmonicPhase) * harmonicAmp;
                 }
             }
@@ -198,7 +199,12 @@ int16_t SynthGenSample(void) {
                 voiceSample += noise * noiseEnvelope;
             }
 
-            int16_t finalSample = (int16_t)(voiceSample * voice->envelope * 5.0f); // ????
+           if (voiceSample > 1.0f)  voiceSample = 1.0f;
+if (voiceSample < -1.0f) voiceSample = -1.0f;
+
+/* ???? envelope ????? */
+int16_t finalSample =
+    (int16_t)(voiceSample * voice->envelope * 8000.0f);
             sample += finalSample;
 
             voice->phase += voice->delta;

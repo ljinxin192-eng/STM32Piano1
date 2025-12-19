@@ -110,7 +110,12 @@ int main(void)
 	SynthInit();
 Tone_Init(); 
 audioInit();
-Tone_Apply(1);
+Tone_Apply(0);
+
+// ??????
+
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -120,6 +125,8 @@ Tone_Apply(1);
 		ScanFunctionKeys();
     /* USER CODE END WHILE */
 
+       
+ 
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
