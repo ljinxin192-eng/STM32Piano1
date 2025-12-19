@@ -44,3 +44,4 @@ minipiano\wavegener.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 minipiano\wavegener.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 minipiano\wavegener.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 minipiano\wavegener.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+minipiano\wavegener.o: ../Core/Inc/tone.h

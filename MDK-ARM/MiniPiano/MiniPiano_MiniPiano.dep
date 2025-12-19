@@ -4,7 +4,7 @@ F (startup_stm32f413xx.s)(0x69420817)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1"
 F (..\Core\Src\inputhandler.c)(0x694277C1)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_MiniPiano-IE:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F413xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F413xx-o minipiano\inputhandler.o --omf_browse minipiano\inputhandler.crf --depend minipiano\inputhandler.d)
 I (../Core/Inc/inputhandler.h)(0x6942776F)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (../Core/Inc/wavegener.h)(0x69420817)
+I (../Core/Inc/wavegener.h)(0x6944FAC6)
 I (E:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
 I (../Core/Inc/gpio.h)(0x69420817)
 I (../Core/Inc/main.h)(0x69420817)
@@ -45,8 +45,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h)(0x69420817)
 I (../Core/Inc/usart.h)(0x69420817)
 I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-F (..\Core\Src\wavegener.c)(0x6942BE05)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_MiniPiano-IE:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F413xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F413xx-o minipiano\wavegener.o --omf_browse minipiano\wavegener.crf --depend minipiano\wavegener.d)
-I (../Core/Inc/wavegener.h)(0x69420817)
+F (..\Core\Src\wavegener.c)(0x6944FAC6)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_MiniPiano-IE:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F413xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F413xx-o minipiano\wavegener.o --omf_browse minipiano\wavegener.crf --depend minipiano\wavegener.d)
+I (../Core/Inc/wavegener.h)(0x6944FAC6)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (E:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
 I (../Core/Inc/gpio.h)(0x69420817)
@@ -90,6 +90,7 @@ I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (E:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
 I (E:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (../Core/Inc/tone.h)(0x6942720D)
 F (..\Core\Src\audiodma.c)(0x69420817)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_MiniPiano-IE:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F413xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F413xx-o minipiano\audiodma.o --omf_browse minipiano\audiodma.crf --depend minipiano\audiodma.d)
 I (../Core/Inc/audiodma.h)(0x69420817)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -131,7 +132,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x69420817)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h)(0x69420817)
 I (../Core/Inc/usart.h)(0x69420817)
 I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (../Core/Inc/wavegener.h)(0x69420817)
+I (../Core/Inc/wavegener.h)(0x6944FAC6)
 I (E:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
 I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 F (../Core/Src/main.c)(0x6942BD73)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_MiniPiano-IE:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F413xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F413xx-o minipiano\main.o --omf_browse minipiano\main.crf --depend minipiano\main.d)
@@ -179,7 +180,7 @@ I (../Core/Inc/usb_otg.h)(0x69420817)
 I (../Core/Inc/gpio.h)(0x69420817)
 I (../Core/Inc/tone.h)(0x6942720D)
 I (../Core/Inc/inputhandler.h)(0x6942776F)
-I (../Core/Inc/wavegener.h)(0x69420817)
+I (../Core/Inc/wavegener.h)(0x6944FAC6)
 I (E:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
 I (../Core/Inc/audiodma.h)(0x69420817)
 I (E:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
@@ -487,10 +488,10 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x69420817)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd.h)(0x69420817)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usb.h)(0x69420817)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h)(0x69420817)
-F (..\Core\Src\tone.c)(0x6942BDB6)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_MiniPiano-IE:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F413xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F413xx-o minipiano\tone.o --omf_browse minipiano\tone.crf --depend minipiano\tone.d)
+F (..\Core\Src\tone.c)(0x6944FAC5)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_MiniPiano-IE:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F413xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F413xx-o minipiano\tone.o --omf_browse minipiano\tone.crf --depend minipiano\tone.d)
 I (../Core/Inc/tone.h)(0x6942720D)
 I (E:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (../Core/Inc/wavegener.h)(0x69420817)
+I (../Core/Inc/wavegener.h)(0x6944FAC6)
 I (E:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
 F (..\Core\Inc\tone.h)(0x6942720D)()
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c)(0x69420817)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_MiniPiano-IE:\Keil_v5\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\Keil_v5\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F413xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F413xx-o minipiano\stm32f4xx_hal_i2s.o --omf_browse minipiano\stm32f4xx_hal_i2s.crf --depend minipiano\stm32f4xx_hal_i2s.d)
